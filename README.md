@@ -1,1 +1,1 @@
-# emsc-webhook-sql
+# EMSC Webhook сервис с поддержкой SQL
