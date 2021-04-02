@@ -1,0 +1,16 @@
+Description=EQ webhook
+After=mariadb.service
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/opt/eq
+ExecStart=/usr/bin/python2 /opt/eq/webhook.py
+PIDFile=/run/eq.pid
+
+Restart= always
+TimeoutStopSec=5
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
